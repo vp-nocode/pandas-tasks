@@ -28,4 +28,4 @@ print(f'\nQ1_math: {Q1_math}, Q3_math: {Q3_math}, downside: {downside}, upside: 
 df_new = df[(df['Math'] >= downside) & (df['Math'] <= upside)]
 print(f'\nTest data set after removing math outliers:\n{df_new.head(4)}')
 print(f'\nTest dataset length: {len(df_new)}')
-
+print(f'\nRemoved math outliers: {len(df_new) - len(df_new)} records')
